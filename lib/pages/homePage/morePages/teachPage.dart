@@ -157,6 +157,8 @@ class _QuestionPageState extends State<QuestionPage> {
                           onPressed: () {
                             if (questions[_currentQues].ans == 1) {
                               BotToast.showText(text: "答案正确！");
+                              _currentQues++;
+                              setState(() {});
                             } else {
                               BotToast.showText(text: "答案错误！");
                             }
@@ -197,6 +199,8 @@ class _QuestionPageState extends State<QuestionPage> {
                           onPressed: () {
                             if (questions[_currentQues].ans == 2) {
                               BotToast.showText(text: "答案正确！");
+                              _currentQues++;
+                              setState(() {});
                             } else {
                               BotToast.showText(text: "答案错误！");
                             }
@@ -238,6 +242,8 @@ class _QuestionPageState extends State<QuestionPage> {
                           onPressed: () {
                             if (questions[_currentQues].ans == 3) {
                               BotToast.showText(text: "答案正确！");
+                              _currentQues++;
+                              setState(() {});
                             } else {
                               BotToast.showText(text: "答案错误！");
                             }
@@ -278,6 +284,8 @@ class _QuestionPageState extends State<QuestionPage> {
                           onPressed: () {
                             if (questions[_currentQues].ans == 4) {
                               BotToast.showText(text: "答案正确！");
+                              _currentQues++;
+                              setState(() {});
                             } else {
                               BotToast.showText(text: "答案错误！");
                             }

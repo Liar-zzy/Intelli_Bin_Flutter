@@ -11,7 +11,8 @@ class MainMenu extends StatelessWidget {
       child: new ListView(
         padding: const EdgeInsets.only(left: 5.0),
         children: <Widget>[
-          _buildListItem("GitHub", Icons.web, () {
+          _buildListItem("GitHub", IconData(0xe677, fontFamily: "AntIcons"),
+              () {
             Navigator.of(context).push(new MaterialPageRoute(builder: (_) {
               return new Browser(
                 url: "https://github.com/Liar-zzy/Intelli_Bin_Flutter",
@@ -19,7 +20,7 @@ class MainMenu extends StatelessWidget {
               );
             }));
           }),
-          _buildListItem("关于我", Icons.markunread, () {
+          _buildListItem("关于我", IconData(0xe63c, fontFamily: "AntIcons"), () {
             showDialog(
               context: context,
               barrierDismissible: false,

@@ -41,19 +41,46 @@ class _TabWidgetState extends State<TabWidget> {
         iconSize: 22,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            activeIcon: Icon(Icons.home),
-            title: Text('主页'),
+            icon: Icon(
+              IconData(0xe703, fontFamily: "AntIcons"),
+              color: Colors.black,
+            ),
+            activeIcon: Icon(
+              IconData(0xe703, fontFamily: "AntIcons"),
+              color: Colors.blue,
+            ),
+            title: Text(
+              '主页',
+              style: TextStyle(fontFamily: "NotoSerifSC"),
+            ),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.library_books),
-            activeIcon: Icon(Icons.library_books),
-            title: Text('使用教程'),
+            icon: Icon(
+              IconData(0xe6f3, fontFamily: "AntIcons"),
+              color: Colors.black,
+            ),
+            activeIcon: Icon(
+              IconData(0xe6f3, fontFamily: "AntIcons"),
+              color: Colors.blue,
+            ),
+            title: Text(
+              '使用教程',
+              style: TextStyle(fontFamily: "NotoSerifSC"),
+            ),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            activeIcon: Icon(Icons.person),
-            title: Text('我的'),
+            icon: Icon(
+              IconData(0xe70e, fontFamily: "AntIcons"),
+              color: Colors.black,
+            ),
+            activeIcon: Icon(
+              IconData(0xe70e, fontFamily: "AntIcons"),
+              color: Colors.blue,
+            ),
+            title: Text(
+              '我的',
+              style: TextStyle(fontFamily: "NotoSerifSC"),
+            ),
           ),
         ],
         currentIndex: _currentIndex,

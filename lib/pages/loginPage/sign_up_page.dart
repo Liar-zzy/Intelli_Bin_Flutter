@@ -81,7 +81,7 @@ class _SignUpPageState extends State<SignUpPage> {
             child: new TextFormField(
               decoration: new InputDecoration(
                   icon: new Icon(
-                    Icons.email,
+                    IconData(0xe63c, fontFamily: "AntIcons"),
                     color: Colors.black,
                   ),
                   hintText: "Email Address",
@@ -103,7 +103,7 @@ class _SignUpPageState extends State<SignUpPage> {
             child: new TextFormField(
               decoration: new InputDecoration(
                 icon: new Icon(
-                  Icons.lock,
+                  IconData(0xe624, fontFamily: "AntIcons"),
                   color: Colors.black,
                 ),
                 hintText: "Password",
@@ -133,7 +133,7 @@ class _SignUpPageState extends State<SignUpPage> {
             child: new TextFormField(
               decoration: new InputDecoration(
                 icon: new Icon(
-                  Icons.lock,
+                  IconData(0xe624, fontFamily: "AntIcons"),
                   color: Colors.black,
                 ),
                 hintText: "Confirm Passowrd",

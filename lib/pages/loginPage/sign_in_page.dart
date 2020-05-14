@@ -73,7 +73,7 @@ class _SignInPageState extends State<SignInPage> {
 
                   decoration: new InputDecoration(
                       icon: new Icon(
-                        Icons.email,
+                        IconData(0xe63c, fontFamily: "AntIcons"),
                         color: Colors.black,
                       ),
                       hintText: "Email Address",
@@ -101,7 +101,7 @@ class _SignInPageState extends State<SignInPage> {
                   focusNode: passwordFocusNode,
                   decoration: new InputDecoration(
                       icon: new Icon(
-                        Icons.lock,
+                        IconData(0xe624, fontFamily: "AntIcons"),
                         color: Colors.black,
                       ),
                       hintText: "Password",

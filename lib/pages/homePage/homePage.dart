@@ -26,7 +26,10 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
         ),
-        leading: Icon(Icons.search),
+        leading: Icon(
+          IconData(0xe741, fontFamily: "AntIcons"),
+          color: Colors.white,
+        ),
         centerTitle: true,
         title: new Container(
           //标题搜索框
