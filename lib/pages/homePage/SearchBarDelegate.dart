@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-const searchList = ["wangcai", "xiaoxianrou", "dachangtui", "nvfengsi"];
+const searchList = ["矿泉水瓶", "橘子皮", "硬盘", "ipad", "A4纸", "电池"];
+const resultList = ["可回收物", "湿垃圾", "可回收物", "可回收物", "可回收物", "有害垃圾"];
 const recentSuggest = ["矿泉水瓶", "橘子皮"];
 
 class SearchBarDelegate extends SearchDelegate<String> {
@@ -30,12 +31,39 @@ class SearchBarDelegate extends SearchDelegate<String> {
   @override
   Widget buildResults(BuildContext context) {
     return Container(
-      width: 100.0,
-      height: 100.0,
+      alignment: Alignment.center,
+      padding: EdgeInsets.all(10),
+      width: 600.0,
+      height: 200.0,
       child: Card(
-        color: Colors.redAccent,
-        child: Center(
-          child: Text(query),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+        color: Colors.red[100],
+        elevation: 10,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            ListTile(
+              leading: Icon(
+                Icons.album,
+                size: 45,
+                color: Colors.red,
+              ),
+              title: Text(
+                query,
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: "NotoSerifSC",
+                ),
+              ),
+              subtitle: Text(
+                resultList[searchList.indexOf(query)],
+                style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: "NotoSerifSC",
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
